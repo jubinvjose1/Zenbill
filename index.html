@@ -38,9 +38,12 @@
   }
 }
 </script>
+<!-- 1. Load Babel for in-browser transpilation -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
   <body class="bg-background">
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+    <!-- 2. Change script type to text/babel and add data-type to let Babel handle it -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
   </body>
 </html>
