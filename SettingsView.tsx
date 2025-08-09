@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { User, UserRole } from '../types';
-import Card from './ui/Card';
-import Input from './ui/Input';
-import Button from './ui/Button';
-import { TrashIcon, PlusIcon, UserIcon, UploadIcon } from './icons';
+import { User, UserRole } from '../types.ts';
+import Card from './ui/Card.tsx';
+import Input from './ui/Input.tsx';
+import Button from './ui/Button.tsx';
+import { TrashIcon, PlusIcon, UserIcon, UploadIcon } from './icons.tsx';
 
 interface SettingsViewProps {
   adminUser: User;

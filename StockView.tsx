@@ -1,10 +1,10 @@
 import React, { useState, useRef } from 'react';
-import { Product } from '../types';
-import Card from './ui/Card';
-import Input from './ui/Input';
-import Button from './ui/Button';
-import Modal from './ui/Modal';
-import { PlusIcon, TrashIcon, StockIcon, EditIcon, DownloadIcon, UploadIcon, SearchIcon, CheckCircleIcon, LoadingSpinner, AlertTriangleIcon } from './icons';
+import { Product } from '../types.ts';
+import Card from './ui/Card.tsx';
+import Input from './ui/Input.tsx';
+import Button from './ui/Button.tsx';
+import Modal from './ui/Modal.tsx';
+import { PlusIcon, TrashIcon, StockIcon, EditIcon, DownloadIcon, UploadIcon, SearchIcon, CheckCircleIcon, LoadingSpinner, AlertTriangleIcon } from './icons.tsx';
 
 interface StockViewProps {
   products: Product[];

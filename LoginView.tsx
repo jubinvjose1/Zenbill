@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Card from './ui/Card';
-import Input from './ui/Input';
-import Button from './ui/Button';
-import { ZenBillLogo, AlertTriangleIcon } from './icons';
+import Card from './ui/Card.tsx';
+import Input from './ui/Input.tsx';
+import Button from './ui/Button.tsx';
+import { ZenBillLogo, AlertTriangleIcon } from './icons.tsx';
 
 interface LoginViewProps {
   onAuth: (isLogin: boolean, name: string, password: string, shopName?: string) => Promise<string | null>;

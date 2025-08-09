@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Ticket, User, TicketStatus } from '../types';
-import Modal from './ui/Modal';
-import Button from './ui/Button';
-import { UserIcon } from './icons';
+import { Ticket, User, TicketStatus } from '../types.ts';
+import Modal from './ui/Modal.tsx';
+import Button from './ui/Button.tsx';
+import { UserIcon } from './icons.tsx';
 
 interface TicketDetailModalProps {
   ticket: Ticket;

@@ -1,11 +1,11 @@
 import React, { useState, useMemo } from 'react';
-import { Sale, User } from '../types';
-import Card from './ui/Card';
-import Modal from './ui/Modal';
-import Button from './ui/Button';
-import { DownloadIcon } from './icons';
-import { downloadCSV } from '../services/csvService';
-import Input from './ui/Input';
+import { Sale, User } from '../types.ts';
+import Card from './ui/Card.tsx';
+import Modal from './ui/Modal.tsx';
+import Button from './ui/Button.tsx';
+import { DownloadIcon } from './icons.tsx';
+import { downloadCSV } from '../services/csvService.ts';
+import Input from './ui/Input.tsx';
 
 interface SalesHistoryViewProps {
   sales: Sale[];

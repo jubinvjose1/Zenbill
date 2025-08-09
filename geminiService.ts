@@ -1,5 +1,5 @@
 import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
-import type { Sale } from '../types';
+import type { Sale } from '../types.ts';
 
 // Define a simple type for chat history messages
 type ChatMessage = {

@@ -1,23 +1,23 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import type { User, Product, Sale, CartItem, UserRole, Activity, Ticket, TicketStatus, TicketMessage } from './types';
-import { View } from './types';
+import type { User, Product, Sale, CartItem, UserRole, Activity, Ticket, TicketStatus, TicketMessage } from './types.ts';
+import { View } from './types.ts';
 
-import Sidebar from './components/Sidebar';
-import LoginView from './components/LoginView';
-import DashboardView from './components/DashboardView';
-import StockView from './components/StockView';
-import NewSaleView from './components/NewSaleView';
-import SalesHistoryView from './components/SalesHistoryView';
-import SettingsView from './components/SettingsView';
-import SuperAdminActivityLogView from './components/SuperAdminActivityLogView';
-import ActivityLogView from './components/ActivityLogView';
-import SuperAdminDashboardView from './components/SuperAdminDashboardView';
-import AccountDisabledOverlay from './components/AccountDisabledOverlay';
-import CustomerBanner from './components/CustomerBanner';
-import { generateAndPrintInvoice } from './services/invoiceService';
-import { downloadCSV } from './services/csvService';
-import SupportView from './components/SupportView';
-import SuperAdminSupportView from './components/SuperAdminSupportView';
+import Sidebar from './components/Sidebar.tsx';
+import LoginView from './components/LoginView.tsx';
+import DashboardView from './components/DashboardView.tsx';
+import StockView from './components/StockView.tsx';
+import NewSaleView from './components/NewSaleView.tsx';
+import SalesHistoryView from './components/SalesHistoryView.tsx';
+import SettingsView from './components/SettingsView.tsx';
+import SuperAdminActivityLogView from './components/SuperAdminActivityLogView.tsx';
+import ActivityLogView from './components/ActivityLogView.tsx';
+import SuperAdminDashboardView from './components/SuperAdminDashboardView.tsx';
+import AccountDisabledOverlay from './components/AccountDisabledOverlay.tsx';
+import CustomerBanner from './components/CustomerBanner.tsx';
+import { generateAndPrintInvoice } from './services/invoiceService.ts';
+import { downloadCSV } from './services/csvService.ts';
+import SupportView from './components/SupportView.tsx';
+import SuperAdminSupportView from './components/SuperAdminSupportView.tsx';
 
 const App: React.FC = () => {
   // Global state for all data across all shops

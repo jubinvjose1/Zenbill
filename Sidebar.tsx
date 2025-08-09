@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, User } from '../types';
-import { DashboardIcon, StockIcon, NewSaleIcon, HistoryIcon, LogoutIcon, SettingsIcon, ZenBillLogo, ActivityLogIcon, UserIcon, SupportIcon } from './icons';
+import { View, User } from '../types.ts';
+import { DashboardIcon, StockIcon, NewSaleIcon, HistoryIcon, LogoutIcon, SettingsIcon, ZenBillLogo, ActivityLogIcon, UserIcon, SupportIcon } from './icons.tsx';
 
 interface SidebarProps {
   currentView: View;

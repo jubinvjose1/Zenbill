@@ -1,5 +1,5 @@
 import React from 'react';
-import { InformationCircleIcon } from './icons';
+import { InformationCircleIcon } from './icons.tsx';
 
 interface CustomerBannerProps {
   text: string;

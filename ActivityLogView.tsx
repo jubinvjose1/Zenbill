@@ -1,7 +1,7 @@
 import React from 'react';
-import { Activity } from '../types';
-import Card from './ui/Card';
-import { ActivityLogIcon } from './icons';
+import { Activity } from '../types.ts';
+import Card from './ui/Card.tsx';
+import { ActivityLogIcon } from './icons.tsx';
 
 interface ActivityLogViewProps {
   activities: Activity[];

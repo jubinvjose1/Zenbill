@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from './ui/Card';
-import Button from './ui/Button';
-import { ZenBillLogo, AlertTriangleIcon, LogoutIcon } from './icons';
+import Card from './ui/Card.tsx';
+import Button from './ui/Button.tsx';
+import { ZenBillLogo, AlertTriangleIcon, LogoutIcon } from './icons.tsx';
 
 interface AccountDisabledOverlayProps {
   message: string;

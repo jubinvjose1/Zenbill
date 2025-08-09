@@ -1,4 +1,4 @@
-import type { Sale, User } from '../types';
+import type { Sale, User } from '../types.ts';
 
 export const generateAndPrintInvoice = (sale: Sale, shopDetails: User): void => {
   const invoiceHtml = `

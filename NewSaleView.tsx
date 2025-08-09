@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Product, CartItem } from '../types';
-import Card from './ui/Card';
-import Button from './ui/Button';
-import Modal from './ui/Modal';
-import { PlusIcon, TrashIcon, NewSaleIcon, StockIcon, SearchIcon, ScaleIcon, AlertTriangleIcon } from './icons';
-import Input from './ui/Input';
+import { Product, CartItem } from '../types.ts';
+import Card from './ui/Card.tsx';
+import Button from './ui/Button.tsx';
+import Modal from './ui/Modal.tsx';
+import { PlusIcon, TrashIcon, NewSaleIcon, StockIcon, SearchIcon, ScaleIcon, AlertTriangleIcon } from './icons.tsx';
+import Input from './ui/Input.tsx';
 
 interface NewSaleViewProps {
   products: Product[];

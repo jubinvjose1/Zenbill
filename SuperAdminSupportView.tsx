@@ -1,9 +1,9 @@
 import React, { useState, useMemo } from 'react';
-import { Ticket, TicketStatus, User } from '../types';
-import Card from './ui/Card';
-import Button from './ui/Button';
-import { SupportIcon } from './icons';
-import TicketDetailModal from './TicketDetailModal';
+import { Ticket, TicketStatus, User } from '../types.ts';
+import Card from './ui/Card.tsx';
+import Button from './ui/Button.tsx';
+import { SupportIcon } from './icons.tsx';
+import TicketDetailModal from './TicketDetailModal.tsx';
 
 interface SuperAdminSupportViewProps {
   tickets: Ticket[];

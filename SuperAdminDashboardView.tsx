@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { User, UserRole, Ticket, Activity } from '../types';
-import Card from './ui/Card';
-import Button from './ui/Button';
-import Modal from './ui/Modal';
-import { UserIcon, EditIcon, InformationCircleIcon, UsersIcon, SettingsIcon, PlusIcon, TrashIcon, SupportIcon, ActivityLogIcon } from './icons';
-import Input from './ui/Input';
+import { User, UserRole, Ticket, Activity } from '../types.ts';
+import Card from './ui/Card.tsx';
+import Button from './ui/Button.tsx';
+import Modal from './ui/Modal.tsx';
+import { UserIcon, EditIcon, InformationCircleIcon, UsersIcon, SettingsIcon, PlusIcon, TrashIcon, SupportIcon, ActivityLogIcon } from './icons.tsx';
+import Input from './ui/Input.tsx';
 
 interface SuperAdminDashboardViewProps {
   customers: User[];

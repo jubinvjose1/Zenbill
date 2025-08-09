@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
-import Card from './ui/Card';
-import { Sale, Product, User } from '../types';
-import { getAiChatResponse } from '../services/geminiService';
-import { LoadingSpinner, RevenueIcon, TotalSalesIcon, LowStockIcon, StarIcon, AlertTriangleIcon, HistoryIcon, LightbulbIcon, ChartBarIcon, SendIcon } from './icons';
-import Button from './ui/Button';
-import BarChart from './ui/BarChart';
+import Card from './ui/Card.tsx';
+import { Sale, Product, User } from '../types.ts';
+import { getAiChatResponse } from '../services/geminiService.ts';
+import { LoadingSpinner, RevenueIcon, TotalSalesIcon, LowStockIcon, StarIcon, AlertTriangleIcon, HistoryIcon, LightbulbIcon, ChartBarIcon, SendIcon } from './icons.tsx';
+import Button from './ui/Button.tsx';
+import BarChart from './ui/BarChart.tsx';
 
 interface DashboardViewProps {
   sales: Sale[];

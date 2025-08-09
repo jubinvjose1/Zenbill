@@ -1,11 +1,11 @@
 import React, { useState, useMemo } from 'react';
-import { Ticket, User } from '../types';
-import Card from './ui/Card';
-import Button from './ui/Button';
-import Modal from './ui/Modal';
-import Input from './ui/Input';
-import { PlusIcon, SupportIcon } from './icons';
-import TicketDetailModal from './TicketDetailModal';
+import { Ticket, User } from '../types.ts';
+import Card from './ui/Card.tsx';
+import Button from './ui/Button.tsx';
+import Modal from './ui/Modal.tsx';
+import Input from './ui/Input.tsx';
+import { PlusIcon, SupportIcon } from './icons.tsx';
+import TicketDetailModal from './TicketDetailModal.tsx';
 
 interface SupportViewProps {
   tickets: Ticket[];
