@@ -28,26 +28,24 @@
         },
       }
     </script>
-    <!-- This importmap tells the browser where to find libraries like React and @google/genai -->
-    <script type="importmap">
+    <!-- The importmap has been removed. The esbuild.run service below will handle all dependencies. -->
+  <script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@19.0.0-rc.0",
-    "react/jsx-runtime": "https://esm.sh/react@19.0.0-rc.0/jsx-runtime",
-    "react-dom/client": "https://esm.sh/react-dom@19.0.0-rc.0/client",
-    "@google/genai": "https://esm.sh/@google/genai",
+    "react": "https://esm.sh/react@^19.1.1",
     "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
-    "react/": "https://esm.sh/react@^19.1.1/"
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.13.0"
   }
 }
 </script>
-  </head>
+</head>
   <body class="bg-background">
     <div id="root"></div>
     <!-- 
-      This script uses a service to build your application on the fly.
-      It points to your raw source code on GitHub, bundles it, and runs it.
-      Casing must be correct (Zenbill, not zenbill).
+      This script uses a service to build your entire application on the fly.
+      It points to your raw source code on GitHub, bundles it and all its dependencies (like React), and runs it.
+      The casing must be correct (Zenbill).
     -->
     <script type="module" src="https://esbuild.run/https://raw.githubusercontent.com/jubinvjose1/Zenbill/main/index.tsx"></script>
   </body>
